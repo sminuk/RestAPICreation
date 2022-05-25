@@ -1,5 +1,4 @@
-/*
- Requirement :- Implement a simple RESTful API
+/*Requirement :- Implement a simple RESTful API
 Receives IOUs as POST requests
 Deliver Summary info as GET requests.
 
