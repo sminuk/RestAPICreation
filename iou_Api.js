@@ -2,39 +2,15 @@
 Receives IOUs as POST requests
 Deliver Summary info as GET requests.
 
-Data Available is
-{
-  "name": "Adam",
-  "owes": {
-    "Bob": 12.0,
-    "Chuck": 4.0,
-    "Dan": 9.5
-  },
-  "owed_by": {
-    "Bob": 6.5,
-    "Dan": 2.75
-  },
-  "balance": "<(total owed by other users) - (total owed to other users)>"
-}
+Users are 4 roomates  Adam,Bob,Chuck,Dan
 
-Users are 4 roomates
-Adam
-Bob
-Chuck
-Dan
-
-Function to be defined 
+Functions to be defined 
 1.GET
 2.POST ADD
 3.POST IOU
 
-Methods Planned
-AddUSer()
-AddIouData()
-Post()
-Get() */
+Methods Planned AddUSer() AddIouData() Post() Get() */
 
-// =============================
 import jsonData from "./data"
 
 class IouUsers
@@ -49,7 +25,7 @@ class IouUsers
 	
 	//Main Expected Functionalities from the requirement
     function getUrlRequest(url){
-    switch (url){
+     switch (url){
         case '/users':
             //call get
             break;
@@ -60,7 +36,7 @@ class IouUsers
         default:
             //unknown url error
             break;
-    }
+     }
     }
 
     AddUser(newUser){ //Adds the user to the db
@@ -80,6 +56,7 @@ class IouUsers
         return user;
         }   
     }
+}
 	
 	get(url){
      //users	{"users":["Adam","Bob"]}	{"users":<List of all User objects>}	<users> (sorted by name)}
