@@ -1,0 +1,57 @@
+TASK 1
+=======
+    Aim:-This task is to create RESTful API for tracking IOUs.
+
+    Main Issue Description
+    ======================
+    Four roommates have a habit of borrowing money from each other frequently, and have trouble remembering who owes whom, and how much.
+    Your task is to implement a simple RESTful API that receives IOUs as POST requests, and can deliver specified summary information via GET requests.
+
+    Question  Link is as below.
+    https://exercism.org/tracks/javascript/exercises/rest-api
+
+    Requirement :- 
+    ==============
+    Implement a simple RESTful API
+    Receives IOUs as POST requests
+    Deliver Summary info as GET requests.
+
+    Functions to be defined
+    =======================
+    1.GET
+    2.POST ADD
+    3.POST IOU
+
+    Methods Planned
+    ===============
+    AddUSer() AddIouData() Post() Get()
+    AddIouData() ->A logic for IOU functionality need to be formulated
+    AddUSer()    ->find out how to add new users
+    Post()       ->post new user data and IOU data
+    Get()        ->Get the list of user data and need to be sorted by name
+
+    User Object
+    ===========
+    Name,Owes,Owed,Amount
+
+    User Object Sample
+    ==================
+    {
+        "name": "Adam",
+        "owes": {
+        "Bob": 12.0,
+        "Chuck": 4.0,
+        "Dan": 9.5
+        },
+        "owed_by": {
+        "Bob": 6.5,
+        "Dan": 2.75
+        },
+        "balance": "<(total owed by other users) - (total owed to other users)>"
+    }
+
+  New Learnings.
+  ==============
+  Trying and writing code in JAVA Script
+  Understanding GET and POST methods working.
+  
